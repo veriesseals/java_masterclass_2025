@@ -63,10 +63,10 @@ public class Hello {
         // Lesson Challenge
         // --------------------------------------------
         // Step 1:  create a double variable with a value of 20.00.
-        double myFirstVariable = 20.00;
+        double myFirstVariable = 20.00d;
 
         // Step 2:  create a second variable of type double with a value 80.00.
-        double mySecondVariable = 80.00;
+        double mySecondVariable = 80.00d;
 
         // Step 3:  add both numbers together, then multiply by 100.00.
         double myTotalValue = ((myFirstVariable + mySecondVariable) * 100);
@@ -74,22 +74,25 @@ public class Hello {
 
         // Step 4:  use the remainder operator, to figure out what the remainder from the result of the operation in step three, and 40.00, will be.
 
-        double myRemainder = myTotalValue % 2;
+        double myRemainder = myTotalValue % 40.00d;
         System.out.println("myRemainder is " + myRemainder);
 
         // Step 5:  create a boolean variable that assigns the value true, if the remainder in step four is 0.00, or false if it's not zero.
 
+        boolean isNoRemainder = (myRemainder == 0) ? true : false;
+        System.out.println("isNoRemainder " + isNoRemainder);
+
+        if (!isNoRemainder) {
+            System.out.println("'got some remainder");
+        } 
+
         // Step 6:  output the boolean variable just to see what the result is. 
 
-        // Step 7:  write an if-then statement that displays a message, 'got some remainder', if the boolean in step five is not true.
+        // Step 7:  write an if-then statement that displays a message, 'got some remainder', if the boolean in step five is not true
 
 
         // Lesson 40 Operator Presedence 
         // --------------------------------------------
-
-
-
-
     }
 
 }
