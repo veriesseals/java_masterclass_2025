@@ -50,7 +50,7 @@ public class Hello {
         // --------------------------------------------
         
         String makeOfCar = "Volkswagen";
-        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+        boolean isDomestic = !"Volkswagen".equals(makeOfCar);
         
         if (isDomestic) {
             System.out.println("This car is domestic to our country");
@@ -80,7 +80,7 @@ public class Hello {
 
         // Step 5:  create a boolean variable that assigns the value true, if the remainder in step four is 0.00, or false if it's not zero.
 
-        boolean isNoRemainder = (myRemainder == 0) ? true : false;
+        boolean isNoRemainder = (myRemainder == 0);
         System.out.println("isNoRemainder " + isNoRemainder);
 
         if (!isNoRemainder) { // if no remainder ! at the beginning
